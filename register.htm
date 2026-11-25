@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+
+<head>
+        <meta charset="UTF-8">    
+    <title>Швидка Колія — Реєстрація</title>
+</head>
+
+<body>
+
+    <h1 align="center">«Швидка Колія»</h1>
+
+    <p align="center">
+        <a href="index.htm">Головна</a> |
+        <a href="prices.htm">Розцінки</a> |
+        <a href="register.htm">Реєстрація</a> |
+        <a href="competitions.html">Змагання</a> |
+        <a href="blocks.html">Блокове оформлення</a> |
+        <a href="first-visit.htm">Перший заїзд</a>
+    </p> 
+
+    <hr>
+
+    <h2 align="center">Реєстрація нового користувача</h2>
+
+    <p align="center">
+        Створіть обліковий запис та отримайте
+        <b>10% знижки на перший заїзд!</b>
+    </p>
+
+    <br>
+
+    <form action="form_send.php" method="post">
+
+        <table border="1" width="80%" align="center" cellpadding="10" cellspacing="0">
+
+            <tr bgcolor="#8B0000">
+                <th colspan="2">
+                    <font color="white">РЕЄСТРАЦІЙНА ФОРМА</font>
+                </th>
+            </tr>
+
+            <tr bgcolor="#FFF3E6">
+                <td width="35%">
+                    <b>Ім'я:</b>
+                </td>
+                <td>
+                    <input type="text" name="name" size="35">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Прізвище:</b>
+                </td>
+                <td>
+                    <input type="text" name="surname" size="35">
+                </td>
+            </tr>
+
+            <tr bgcolor="#FFF3E6">
+                <td>
+                    <b>Електронна пошта:</b>
+                </td>
+                <td>
+                    <input type="email" name="email" size="35">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Номер телефону:</b>
+                </td>
+                <td>
+                    <input type="text" name="phone" size="35">
+                </td>
+            </tr>
+
+            <tr bgcolor="#FFF3E6">
+                <td>
+                    <b>Пароль:</b>
+                </td>
+                <td>
+                    <input type="password" name="password" size="35">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Дата народження:</b>
+                </td>
+                <td>
+                    <select name="day">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+
+                    <select name="month">
+                        <option>Січень</option>
+                        <option>Лютий</option>
+                        <option>Березень</option>
+                        <option>Квітень</option>
+                        <option>Травень</option>
+                        <option>Червень</option>
+                        <option>Липень</option>
+                        <option>Серпень</option>
+                        <option>Вересень</option>
+                        <option>Жовтень</option>
+                        <option>Листопад</option>
+                        <option>Грудень</option>
+                    </select>
+
+                    <input type="text" name="year" size="5" maxlength="4">
+                </td>
+            </tr>
+
+            <tr bgcolor="#FFF3E6">
+                <td>
+                    <b>Стать:</b>
+                </td>
+                <td>
+                    <input type="radio" name="gender" value="male">
+                    Чоловіча
+
+                    <input type="radio" name="gender" value="female">
+                    Жіноча
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Улюблений тип заїзду:</b>
+                </td>
+                <td>
+                    <input type="radio" name="race" value="individual">
+                    Індивідуальний
+
+                    <br>
+
+                    <input type="radio" name="race" value="group">
+                    Груповий
+
+                    <br>
+
+                    <input type="radio" name="race" value="competition">
+                    Змагання
+                </td>
+            </tr>
+
+            <tr bgcolor="#FFF3E6">
+                <td>
+                    <b>Інтереси:</b>
+                </td>
+                <td>
+                    <select name="interests" multiple size="5">
+                        <option>Картинг</option>
+                        <option>Автомобілі</option>
+                        <option>Автоспорт</option>
+                        <option>Змагання</option>
+                        <option>Активний відпочинок</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <b>Додаткова інформація:</b>
+                </td>
+                <td>
+                    <textarea name="information" rows="6" cols="40"></textarea>
+                </td>
+            </tr>
+
+            <tr bgcolor="#FFF3E6">
+                <td colspan="2">
+                    <input type="checkbox" name="news" checked>
+                    Хочу отримувати новини та інформацію
+                    про акції «Швидкої Колії»
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+
+                    <input type="submit" value="Зареєструватися">
+
+                    <input type="reset" value="Очистити">
+
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <br>
+
+    <table border="1" width="80%" align="center" cellpadding="10" cellspacing="0">
+
+        <tr bgcolor="#8B0000">
+            <th>
+                <font color="white">ПОДАРУНОК ЗА РЕЄСТРАЦІЮ</font>
+            </th>
+        </tr>
+
+        <tr bgcolor="#FFE4B5">
+            <td align="center">
+                <b>10% знижки на перший картинг-заїзд!</b>
+                <br><br>
+                Після створення облікового запису новий клієнт
+                отримує знижку на свій перший заїзд.
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
